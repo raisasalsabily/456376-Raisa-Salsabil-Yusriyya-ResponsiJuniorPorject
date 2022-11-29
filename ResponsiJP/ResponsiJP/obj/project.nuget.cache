@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "r6KtJ8TV6AqzJWEp98IiCqSeLYJDmmypYB+GAWqn1YAcJAVgmZtznoY39u3jE5J9WzBZq+EAr0ydNlSilYxQ1Q==",
+  "dgSpecHash": "NDCDb0TvSn1pqcGAam0xLJZ1Cyyups7BxcChVpjbtw29JH9XRCzpbIM6JXS5Zq6N86Cbeokd2+sg33Dz+LdeKg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Raisa Salsabil Y\\Documents\\GitHub\\456376-Raisa-Salsabil-Yusriyya-ResponsiJuniorPorject\\ResponsiJP\\ResponsiJP\\ResponsiJP.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Raisa Salsabil Y\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Raisa Salsabil Y\\.nuget\\packages\\npgsql\\7.0.0\\npgsql.7.0.0.nupkg.sha512",
+    "C:\\Users\\Raisa Salsabil Y\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

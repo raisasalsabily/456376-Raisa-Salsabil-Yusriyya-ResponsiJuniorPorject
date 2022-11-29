@@ -1,0 +1,33 @@
+create sequence dep_id start 001;
+create table departemen(
+	id_dep varchar default 'dep' || nextval('dep_id') primary key,
+	nama_dep VARCHAR(30) not null
+)
+
+
+create sequence karyawan_id start 001;
+create table karyawan(
+	id_karyawan varchar(30) default 'kry' || nextval('karyawan_id') primary key,
+	nama VARCHAR(30) not null,
+	id_dep VARCHAR(30) REFERENCES departemen(id_dep)
+)
+
+
+-- join -- 
+select * from departemen cross join karyawan;
+
+
+-- insert function --
+create function insert_func(_nama varchar, _id_dep varchar)
+returns int AS
+'
+BEGIN
+	insert into public.karyawan(nama, id_dep) values (_nama, _id_dep);
+	if found then 
+		return 1;
+	else
+		return 0;
+	end if;
+END
+'
+language plpgsql;ge plpgsql;
