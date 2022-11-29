@@ -21,15 +21,7 @@ namespace ResponsiJP
             conn = new NpgsqlConnection(connstring);
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
 
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnInsert_Click(object sender, EventArgs e)
         {
@@ -140,6 +132,16 @@ namespace ResponsiJP
             {
                 MessageBox.Show("Error: " + ex.Message + " FAIL!");
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

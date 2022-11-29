@@ -45,3 +45,37 @@ BEGIN
 	select id_karyawan, nama, id_dep from karyawan;
 END
 '
+
+
+
+-- update function --
+create function update_func(_id_karyawan varchar, _nama varchar)
+returns int AS
+'
+BEGIN
+	update karyawan set
+		nama=_nama
+	where id_karyawan=_id_karyawan;
+	if found then
+		return 1;
+	else 
+		return 0;
+	end if;
+END
+'
+language plpgsql
+
+
+-- delete function --
+create function delete_func(_id_karyawan varchar)
+returns int AS
+'
+BEGIN
+	delete from public.karyawan where id_karyawan=_id_karyawan;
+	if found then
+		return 1;
+	else return 0;
+	end if;
+END
+'
+language plpgsql;
