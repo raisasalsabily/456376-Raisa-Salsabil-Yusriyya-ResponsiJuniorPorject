@@ -77,6 +77,12 @@
             // tbDep
             // 
             this.tbDep.FormattingEnabled = true;
+            this.tbDep.Items.AddRange(new object[] {
+            "HR ",
+            "ENG",
+            "DEV",
+            "PM",
+            "FIN"});
             this.tbDep.Location = new System.Drawing.Point(142, 145);
             this.tbDep.Name = "tbDep";
             this.tbDep.Size = new System.Drawing.Size(223, 23);
@@ -100,6 +106,7 @@
             this.btnEdit.TabIndex = 5;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDelete
             // 
@@ -109,6 +116,7 @@
             this.btnDelete.TabIndex = 6;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // groupBox1
             // 
@@ -179,6 +187,7 @@
             this.dgvData.RowTemplate.Height = 25;
             this.dgvData.Size = new System.Drawing.Size(535, 289);
             this.dgvData.TabIndex = 8;
+            this.dgvData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvData_CellClick);
             // 
             // pictureBox1
             // 

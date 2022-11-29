@@ -30,4 +30,18 @@ BEGIN
 	end if;
 END
 '
-language plpgsql;ge plpgsql;
+language plpgsql;
+
+
+
+-- select function -- 
+create function select_func()
+returns table(_id_karyawan varchar, _nama varchar, _id_dep varchar)
+language plpgsql
+as
+'
+BEGIN
+	return query
+	select id_karyawan, nama, id_dep from karyawan;
+END
+'
